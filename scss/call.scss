@@ -1,0 +1,45 @@
+.call {
+    background-color: $accent;
+    min-height: 301px;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    &__title{
+       font-size: 24px; 
+       font-family: 'Roboto-Medium';
+       line-height: 24px;
+       margin-bottom: 15px;
+       font-weight: 500;
+    }
+    &__text{
+       font-weight: 300;
+       margin-bottom: 40px;
+    }
+    &__btn{
+       padding: 16px 15px;
+       color: $accent;
+       font-size: 18px;
+       font-weight: 400;
+       border: none;
+       border-radius: 3px;
+       text-transform: uppercase;
+    }
+}
+
+@media (min-width: 768px) {
+    .call {
+        min-height: 187px;
+        text-align: left;
+        &__inner{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        }
+        &__box{
+            max-width: 427px;
+        }
+        &__text{
+           
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.project {
+  text-align: center;
+  padding: 20px 0 40px;
+  background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 16, 0) 100%);
+}
+.project__title {
+  color: #fff;
+  margin-bottom: 40px;
+}
+.project__title::after {
+  background-color: #fff;
+}
+.project__item-img {
+  min-height: 250px;
+  border-radius: 4px;
+}
+.project__item-link {
+  display: block;
+  padding: 20px 0;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}/*# sourceMappingURL=project&team.css.map */

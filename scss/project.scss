@@ -1,0 +1,130 @@
+.project{
+  text-align: center;
+  padding: 20px 0 40px;
+  background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 16, 0) 100%);
+  &__title{
+    color: #fff;
+    margin-bottom: 40px;
+    &::after{
+        background-color: #fff;
+
+    }
+  }
+  &__item-img{
+    min-height: 250px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    padding: 12px;
+    &:hover{
+        .project__item-inner{
+            opacity: 1; 
+        } 
+    }
+  }
+  &__item-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #fff, $alpha: 0.83);
+    border-radius: 4px;
+    min-height: 227px;
+    opacity: 0;
+    transition: all ease .8s;
+  } 
+  &__item-info, &__item-search {
+    margin: 0 6px;
+  }
+  &__item-link{
+    display: block;
+    padding: 20px 0;
+    color: $accent;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+}
+
+
+
+@media (min-width: 640px) {
+  .project{
+    padding: 40px 0 20px;
+    &__title{
+      margin-bottom: 40px;
+     
+    }
+    &__item-img{
+      min-height: 460px;  
+      padding: 21px 24px;
+    }
+    &__item-inner{
+      min-height: 417px;
+    }
+    &__item-link{
+      font-size: 20px;
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+  .project{
+    padding: 80px 0 60px;
+    &__items{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__title{
+      margin-bottom: 40px;
+    }
+    &__item-img{
+      min-height: 282px;
+      width: 317px;  
+      padding: 12px 14px;
+    }
+    &__item-inner{
+      min-height: 256px;
+    }
+    &__item-link{
+      font-size: 20px;
+      padding: 30px 0;
+    }
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .project{
+    &__items{
+      justify-content: center;
+    }
+    &__title{
+      margin-bottom: 40px;
+     
+    }
+    &__item-img{
+      margin: 0 15px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .project{
+    &__items{
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      
+    }
+    &__title{
+      margin-bottom: 40px;
+     
+    }
+    &__item-img{
+      margin: 0;
+      width: 297px;
+    }
+  }
+}

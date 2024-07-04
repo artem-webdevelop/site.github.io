@@ -1,0 +1,16 @@
+.reviews{
+    padding: 50px 0;
+    text-align: center;
+    &__img{
+        margin-bottom: 50px;
+    }
+    &__par {
+        margin-bottom: 30px;
+    } 
+    &__name{
+        color: $accent;
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

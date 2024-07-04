@@ -1,0 +1,27 @@
+.head {
+  background-image: url(../images/bg-head.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 193px;
+}
+
+.top-slider {
+  background: rgba(33, 33, 33, 0.5);
+  position: relative;
+  min-height: 193px;
+}
+.top-slider__item {
+  color: #fff;
+  text-align: center;
+}
+.top-slider__title {
+  font-family: "Roboto-Regular";
+  line-height: 28px;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 36px 0 28px;
+  max-width: 243px;
+  margin: 0 auto;
+}/*# sourceMappingURL=head.css.map */

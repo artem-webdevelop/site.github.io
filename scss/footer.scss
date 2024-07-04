@@ -1,0 +1,49 @@
+.footer{
+    min-height: 100px;
+    background-color: $accent;
+    &__inner{
+     
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__contacts{
+        margin-top: 25px;
+        margin-right: 0;
+        text-align: right;
+    }
+    &__contact{
+        color: #000;
+        margin-bottom: 10px;
+    }
+    &__telefon,&__mail{
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer{
+        &__contacts{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        
+
+        }
+        &__contact{
+            color: #000;
+            margin-bottom: 10px;
+        }
+        &__telefon,&__mail{
+            display: block;
+            cursor: pointer;
+            color: #fff;
+            margin-bottom: 10px;
+            margin-left: 50px;
+
+        }
+    }
+}    

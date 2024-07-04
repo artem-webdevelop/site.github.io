@@ -1,0 +1,254 @@
+.servises {
+    padding: 25px 0 40px;
+    text-align: center;
+    &__title{
+      margin-bottom: 47px;
+      color: $accent;
+    }
+    &__descr{
+        font-size: 20px;
+        line-height: 24px;
+        color: $text-color;
+        margin-bottom: 24px;
+    }
+    &__text{
+        color: #797979;
+        margin-bottom: 40px;
+        font-size: 15px;
+        line-height: 17px;
+    }
+    &__item{
+      min-height: 310px;
+      border: 1px solid  #F9F6E5;
+      border-bottom: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &:last-child {
+        border-bottom: 1px solid  #F9F6E5;
+      }
+      &:hover{
+       
+        .servises__item-text,
+        .servises__item-link{
+         opacity: 1;
+         height: auto;
+         overflow: visible;
+        }
+        .servises__item-title{
+          margin-bottom: 30px;
+        }
+        .servises__item-inner{
+          border: 4px solid $accent;
+          margin: 18px;
+          padding: 25px 20px 5px;
+          min-height: 270px;
+        }
+      }
+    }
+    
+    &__item-inner{
+      transition: all 0.5s;
+    }
+    &__item-img{
+      
+    }
+    &__item-title{
+      line-height: 19px;
+      letter-spacing: 2px;
+      font-size: 16px;
+      color: $text-color;
+      text-transform: uppercase;
+    }
+    &__item-text,
+    &__item-link{
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.8s;
+    }
+    &__item-text{
+     
+      margin-bottom: 17px;
+    }
+    &__item-link{
+      
+      letter-spacing: 2px;
+      color: $accent;
+      text-transform: uppercase;
+    }
+
+   
+
+}
+
+@media (min-width: 640px) {
+  
+  .servises {
+    padding: 24px 0 0;
+    
+    &__title{
+      margin-bottom: 20px;
+      padding-bottom: 0;
+     &::after{
+      display: none;
+     }
+    }
+    &__descr{
+        font-size: 24px;
+        padding-bottom: 38px;
+        margin-bottom: 31px;
+        position: relative;
+        &::after{
+          content: '';
+          position: absolute;
+          width: 100px;
+          height: 8px;
+          background-color: #2B4074;
+          bottom: 0;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+        }
+    }
+    &__text{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    &__items{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -30px;
+    }
+    
+    &__item{
+      min-height: 310px;
+      width: 50%;
+      &:nth-child(even){
+        border-left: none;
+      }
+      &:last-child {
+        border-bottom: none
+      }
+     
+    }
+  }
+
+}
+
+
+@media (min-width: 768px) {
+  
+  .servises {
+    padding: 50px 0 0;
+    
+    &__title{
+      margin-bottom: 30px;
+    }
+    &__descr{
+       text-align: left;
+        &::after{
+        margin-left: 0;
+        }
+    }
+    &__text{
+      margin-bottom: 27px;
+      text-align: left;
+    }
+    &__items{
+      margin: 0 -40px;
+    }
+    
+    &__item{
+      padding: 0 65px;
+      min-height: 334px;
+      &:hover{
+        padding: 0 18px;
+        .servises__item-inner{
+          margin: 18px 0;
+          padding: 35px 60px 5px;
+          min-height: 288px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1024px) {
+  
+  .servises {
+    padding: 50px 0 0;
+    
+    &__title{
+      margin-bottom: 60px;
+    }
+    &__descr{
+      padding-bottom: 46px;
+      margin-bottom: 40px;
+    }
+    &__text{
+      margin-bottom: 32px;
+      max-width: 608px;
+    }
+   
+    &__item{
+      width: 25%;
+      padding: 0 18px;
+      min-height: 334px;
+      &:hover{
+        padding: 0 18px;
+        .servises__item-inner{
+          margin: 18px 0;
+          padding: 35px 60px 5px;
+          min-height: 288px;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media (min-width: 1440px) {
+  
+  .servises {
+    padding: 0;
+    &__inner{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__head{
+      max-width: 350px;
+      margin-right: 100px;
+    }
+    &__title{
+      margin: 90px 0 70px;
+      text-align: left;
+    }
+    &__descr{
+      padding-bottom: 38px;
+      margin-bottom: 35px;
+    }
+   
+    &__items{
+      margin-right: -101px;
+    }
+    &__item{
+      width: 237px;
+      
+      padding: 0 5px;
+      min-height: 334px;
+      &:hover{
+        padding: 0 5px;
+        .servises__item-inner{
+          margin: 5px 0;
+          padding: 10px 3px 5px;
+          min-height: 288px;
+        }
+      }
+    }
+  }
+
+}
+
